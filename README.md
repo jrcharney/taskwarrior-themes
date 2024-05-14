@@ -1,21 +1,21 @@
 # taskwarrior-themes
-Righting a wrong that the GothenburgBitFactory forgot to fix
+Righting a wrong that the ~~GothenburgBitFactory~~ *Arch Linux* forgot to fix.
 
 ## About
 
-Were you like me looking around for where @GothenburgBitFactory put the themes for Taskwarrior?
+Were you like me looking around for where @GothenburgBitFactory put the themes for Taskwarrior? Are you using an Arch-based Linux distro (e.g. Arch Linux or Manjaro)? Could you not find where the Task Warrior themes should be (e.g. `/usr/share/task/themes`, `/usr/share/taskwarrior/themes` or `~/.task/themes`)?
 
-They weren't in `/usr/share/task` because there was no `/usr/share/task` directory. This could have been a good place to put a `/usr/share/task/themes` directory. Maybe Timewarrior could have used it too.
+This repo exist to fix that problem.
 
-They weren't in `~/.task` which would have been a good place to put a `themes` directory too.
-
-This repo exists to fix that problem.
 
 ## Installation
 
-1. Clone this repo.
+1. Clone this repo. (`git clone https://github.com/jrcharney/taskwarrior-themes`)
 2. Copy or move the `themes` directory to the `~/.task` directory. (`cp -r themes ~/.task`)
-3. Add `include ~/.task/themes/theme-name-file.theme` to your `~/.taskrc` file.
+3. Add `include ~/.task/themes/theme-name-file.theme` to your `~/.taskrc` file. The lines should be already there, you just need to uncomment one of theme.
+
+You might also want to add `editor=nano` (or your favorite editor) and `color=on` down near the bottom of `~/.taskrc` just to be sure.
+
 
 ## What in here?
 
@@ -34,4 +34,10 @@ Included are the standard task warrior themes.
 - solarized-dark-256.theme
 - solarized-light-256.theme
 
+See the [Taskwarrior Themes](https://taskwarrior.org/docs/themes/) page to see what those look like.
+
 Eventually, I'd like to add my own themes, or maybe an app or script that creates a theme from a color swatch.
+
+## Why use this?
+
+[I checked with the GBF](https://github.com/GothenburgBitFactory/taskwarrior/issues/3069), and it turned out that the party responsible for not including the themes were the folks at Arch Linux.  This should work with other distros and probably should work with Timewarrior too.
